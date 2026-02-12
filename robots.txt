@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drops-kenya.vercel.app/sitemap.xml
