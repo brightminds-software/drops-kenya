@@ -1,7 +1,7 @@
 # 🎶 Drops-Kenya
 
 Premium DJ drops and audio branding from Nairobi, Kenya.  
-We specialize in **Wigman drops**, **cheap DJ drops in Kenya**, and **custom DJ audio** for DJs across Africa and beyond.
+We specialize in **Wigman drops**, **Custom DJ drops in Kenya**, and **custom DJ audio** for DJs across Africa and beyond.
 
 ---
 
