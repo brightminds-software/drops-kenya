@@ -16,7 +16,7 @@ We specialize in **Wigman drops**, **cheap DJ drops in Kenya**, and **custom DJ 
 ---
 
 ## 🌍 Keywords
-DJ drops Kenya | Wigman drops | Cheap DJ drops in Kenya | Nairobi DJ branding | Custom DJ audio
+DJ drops Kenya | Wigman drops | Buy DJ drops in Kenya | Nairobi DJ branding | Custom DJ audio | Radio Jingle Drops | Upcoming Djs In Kenya | Sounds Tags
 
 ---
 
