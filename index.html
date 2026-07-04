@@ -7,7 +7,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="google-site-verification" content="3nGxbucl1DohjsQT9GTmKEUCxNc9lZaz1bpSvIKS-Tg" />
 
-  <title>DJ Drops Kenya | Premium Custom DJ Drops in Nairobi & Kenya</title>
+  <title>DJ drops Kenya | Premium Custom DJ Drops in Nairobi & Kenya</title>
   <meta name="description" content="Discover premium DJ drops in Kenya with custom voice branding, WhatsApp ordering, and professional drops for DJs, radio, clubs, and events." />
   <meta name="keywords" content="DJ drops Kenya, custom DJ drops, Nairobi DJ branding, premium DJ drops, WhatsApp DJ drops, radio drops Kenya, club drops Kenya, voice drops Kenya, DJ intro drops, audio branding Kenya" />
   <link rel="canonical" href="https://drops-kenya.vercel.app">
@@ -66,6 +66,9 @@
 </head>
 
 <body>
+  <!-- Web App Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <div class="container">
     <!-- ===== NAVBAR ===== -->
     <header>
@@ -94,154 +97,185 @@
     <main>
       <!-- ===== HERO ===== -->
       <section id="hero" class="hero">
-        <div class="hero-content">
+        <div class="hero-content animate-on-scroll">
+          <div class="hero-badge">🇰🇪 #1 DJ Drops Platform in Kenya</div>
           <h1>Kenya’s Premium DJ <span class="drops-color">Drops</span> Hub</h1>
           <p>Powerful, polished, and personalized voice drops for DJs, radio, clubs, and events across Kenya.</p>
-          <a href="#drops" class="cta-btn primary">
-            <i class="fas fa-headphones" aria-hidden="true"></i>
-            Explore Drops
-          </a>
-          <a href="#hero" id="share-btn" class="cta-btn secondary" aria-label="Share this site">
-            <i class="fas fa-share" aria-hidden="true"></i>
-            Share This Site
-          </a>
+          <div class="hero-actions">
+            <a href="#drops" class="cta-btn primary">
+              <i class="fas fa-headphones" aria-hidden="true"></i>
+              Explore Drops
+            </a>
+            <a href="#hero" id="share-btn" class="cta-btn secondary" aria-label="Share this site">
+              <i class="fas fa-share-nodes" aria-hidden="true"></i>
+              Share
+            </a>
+          </div>
           <div id="copy-popup" class="copy-popup" role="status" aria-live="polite">Link copied to clipboard!</div>
         </div>
       </section>
 
-      <!-- ===== DROPS ===== -->
+            <!-- ===== DROPS (COMPACT MOBILE-FIRST BOXES) ===== -->
       <section id="drops" class="drops" aria-labelledby="drops-title">
-        <h2 id="drops-title">Our DJ Drops</h2>
+        <div class="section-header animate-on-scroll">
+          <h2 id="drops-title">Our DJ Drops</h2>
+          <p class="intro">Select a voice, preview the drop, and secure your brand instantly.</p>
+        </div>
+
         <div class="drops-grid">
-          <article class="audio-card new" itemscope itemtype="https://schema.org/Product">
-            <img src="assets/images/logo1.png" alt="Sound Effects Pack cover image" class="profile-img" loading="lazy" width="90" height="90" itemprop="image">
-            <div class="audio-info">
-              <h3 itemprop="name"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i> Sound Effects Pack</h3>
-              <p><i class="fas fa-wave-square" aria-hidden="true"></i> 100+ premium sound effects</p>
-              <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+          <!-- Box 1 -->
+          <article class="audio-box new animate-on-scroll" itemscope itemtype="https://schema.org/Product">
+            <img src="assets/images/logo1.png" alt="Sound Effects Pack" class="box-img" loading="lazy" itemprop="image">
+            <div class="box-content">
+              <h3 class="box-title" itemprop="name">SFX Pack</h3>
+              <p class="box-meta">100+ Premium Transitions</p>
+              <span class="box-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <meta itemprop="priceCurrency" content="KES">
-                <span itemprop="price">Kes 650</span>
+                KES <span itemprop="price">650</span>
               </span>
-              <p style="margin-top:.45rem; font-size:.88rem;"><s>KES 1,000</s> • <strong>35% OFF</strong></p>
+            </div>
+            <div class="box-actions">
+              <button class="play-btn" type="button" data-audio="drop11" aria-label="Play preview">
+                <i class="fas fa-play icon-play"></i>
+                <div class="audio-bars"><span></span><span></span><span></span><span></span></div>
+              </button>
+              <a href="https://wa.me/254745736283?text=Hi%20Drops-Kenya,%20I%20want%20to%20buy%20the%20Sound%20Effects%20Pack%20for%20KES%20650" target="_blank" rel="noopener noreferrer" class="buy-btn" aria-label="Buy on WhatsApp">
+                <i class="fab fa-whatsapp"></i> Buy
+              </a>
             </div>
             <audio id="drop11" preload="none" src="assets/audio/Dj-drop-effects-pack.mp3" type="audio/mpeg"></audio>
-            <div class="card-actions">
-              <button class="play-btn" type="button" data-audio="drop11" aria-label="Play Sound Effects Pack preview">
-                <i class="fas fa-play" aria-hidden="true"></i> Listen 
-              </button>
-              <a href="https://wa.me/254745736283?text=Hi%20Drops-Kenya,%20I%20want%20to%20buy%20the%20Sound%20Effects%20Pack%20for%20KES%20650%20(35%25%20OFF)%20with%20100%2B%20sound%20effects." target="_blank" rel="noopener noreferrer" class="buy-btn" aria-label="Buy Sound Effects Pack on WhatsApp">
-                <i class="fab fa-whatsapp" aria-hidden="true"></i> Buy Pack
-              </a>
-            </div>
-            <p><i class="fas fa-bolt" aria-hidden="true"></i> More power for your sets, intros, and transitions</p>
           </article>
 
-
-          <article class="audio-card" itemscope itemtype="https://schema.org/Product">
-            <img src="assets/images/profiles/profile.png" alt="Mendy DJ drop profile image" class="profile-img" loading="lazy" width="90" height="90" itemprop="image">
-            <div class="audio-info">
-              <h3 itemprop="name">Mendy</h3>
-              <p>Female • Premium • Gold</p>
-              <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+          <!-- Box 2 -->
+          <article class="audio-box animate-on-scroll" itemscope itemtype="https://schema.org/Product">
+            <img src="assets/images/profiles/mendy profile.jpg" alt="Mendy" class="box-img" loading="lazy" itemprop="image">
+            <div class="box-content">
+              <h3 class="box-title" itemprop="name">Mendy</h3>
+              <p class="box-meta">Female • Premium • Gold</p>
+              <span class="box-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <meta itemprop="priceCurrency" content="KES">
-                <span itemprop="price">480</span>/Drop
+                KES <span itemprop="price">480</span>
               </span>
+            </div>
+            <div class="box-actions">
+              <button class="play-btn" type="button" data-audio="drop10" aria-label="Play preview">
+                <i class="fas fa-play icon-play"></i>
+                <div class="audio-bars"><span></span><span></span><span></span><span></span></div>
+              </button>
+              <a href="https://wa.me/254745736283?text=Hi%20Drops-Kenya,%20I%20want%20to%20buy%20Mendy%20DJ%20Drop%20for%20KES%20480" target="_blank" rel="noopener noreferrer" class="buy-btn" aria-label="Buy on WhatsApp">
+                <i class="fab fa-whatsapp"></i> Buy
+              </a>
             </div>
             <audio id="drop10" preload="none" src="assets/audio/Mendy Dj Drop.mp3" type="audio/mpeg"></audio>
-            <div class="card-actions">
-              <button class="play-btn" type="button" data-audio="drop10" aria-label="Play Mendy DJ drop">
-                <i class="fas fa-play" aria-hidden="true"></i> Play
-              </button>
-              <a href="https://wa.me/254745736283?text=Hi%20Drops-Kenya,%20I%20want%20to%20buy%20Mendy%20DJ%20Drop%20for%20KES%20480" target="_blank" rel="noopener noreferrer" class="buy-btn" aria-label="Buy Mendy DJ drop on WhatsApp">
-                <i class="fab fa-whatsapp" aria-hidden="true"></i> Buy
-              </a>
-            </div>
-            <p>Just like Mendy, Like Gold!</p>
           </article>
 
-          <article class="audio-card" itemscope itemtype="https://schema.org/Product">
-            <img src="assets/images/profiles/profile.png" alt="Wigman DJ drop profile image" class="profile-img" loading="lazy" width="90" height="90" itemprop="image">
-            <div class="audio-info">
-              <h3 itemprop="name">Wigman</h3>
-              <p>Male • Deep • Strong</p>
-              <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+          <!-- Box 3 -->
+          <article class="audio-box animate-on-scroll" itemscope itemtype="https://schema.org/Product">
+            <img src="assets/images/profiles/Wigman profile.jpg" alt="Wigman" class="box-img" loading="lazy" itemprop="image">
+            <div class="box-content">
+              <h3 class="box-title" itemprop="name">Wigman</h3>
+              <p class="box-meta">Male • Deep • Strong</p>
+              <span class="box-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <meta itemprop="priceCurrency" content="KES">
-                <span itemprop="price">480</span>/Drop
+                KES <span itemprop="price">480</span>
               </span>
+            </div>
+            <div class="box-actions">
+              <button class="play-btn" type="button" data-audio="drop2" aria-label="Play preview">
+                <i class="fas fa-play icon-play"></i>
+                <div class="audio-bars"><span></span><span></span><span></span><span></span></div>
+              </button>
+              <a href="https://wa.me/254745736283?text=Hi%20Drops-Kenya,%20I%20want%20to%20buy%20Wigman%20DJ%20Drop%20for%20KES%20480" target="_blank" rel="noopener noreferrer" class="buy-btn" aria-label="Buy on WhatsApp">
+                <i class="fab fa-whatsapp"></i> Buy
+              </a>
             </div>
             <audio id="drop2" preload="none" src="assets/audio/Wigman-Sound.mp3" type="audio/mpeg"></audio>
-            <div class="card-actions">
-              <button class="play-btn" type="button" data-audio="drop2" aria-label="Play Wigman DJ drop">
-                <i class="fas fa-play" aria-hidden="true"></i> Play
+          </article>
+
+          <!-- Box 4 -->
+          <article class="audio-box new animate-on-scroll" itemscope itemtype="https://schema.org/Product">
+            <img src="assets/images/profiles/Ashley Profile.jpg" alt="Ashley" class="box-img" loading="lazy" itemprop="image">
+            <div class="box-content">
+              <h3 class="box-title" itemprop="name">Ashley</h3>
+              <p class="box-meta">Female • Sexy • Seductive</p>
+              <span class="box-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <meta itemprop="priceCurrency" content="KES">
+                KES <span itemprop="price">400</span>
+              </span>
+            </div>
+            <div class="box-actions">
+              <button class="play-btn" type="button" data-audio="drop7" aria-label="Play preview">
+                <i class="fas fa-play icon-play"></i>
+                <div class="audio-bars"><span></span><span></span><span></span><span></span></div>
               </button>
-              <a href="https://wa.me/254745736283?text=Hi%20Drops-Kenya,%20I%20want%20to%20buy%20Wigman%20DJ%20Drop%20for%20KES%20480" target="_blank" rel="noopener noreferrer" class="buy-btn" aria-label="Buy Wigman DJ drop on WhatsApp">
-                <i class="fab fa-whatsapp" aria-hidden="true"></i> Buy
+              <a href="https://wa.me/254745736283?text=Hi%20Drops-Kenya,%20I%20want%20to%20buy%20Ashley%20DJ%20Drop%20for%20KES%20400" target="_blank" rel="noopener noreferrer" class="buy-btn" aria-label="Buy on WhatsApp">
+                <i class="fab fa-whatsapp"></i> Buy
               </a>
             </div>
-            <p>Command With Your Name</p>
+            <audio id="drop7" preload="none" src="assets/audio/Official Ashley Voice.MP3" type="audio/mpeg"></audio>
           </article>
-          
-          <article class="audio-card" itemscope itemtype="https://schema.org/Product">
-            <img src="assets/images/profiles/profile.png" alt="Titan DJ drop profile image" class="profile-img" loading="lazy" width="90" height="90" itemprop="image">
-            <div class="audio-info">
-              <h3 itemprop="name">Titan</h3>
-              <p>Male • Massive • Dominant</p>
-              <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+
+
+          <!-- Box 5 -->
+          <article class="audio-box animate-on-scroll" itemscope itemtype="https://schema.org/Product">
+            <img src="assets/images/profiles/Titan profile.jpg" alt="Titan" class="box-img" loading="lazy" itemprop="image">
+            <div class="box-content">
+              <h3 class="box-title" itemprop="name">Titan</h3>
+              <p class="box-meta">Male • Massive • Dominant</p>
+              <span class="box-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <meta itemprop="priceCurrency" content="KES">
-                <span itemprop="price">350</span>/Drop
+                KES <span itemprop="price">350</span>
               </span>
+            </div>
+            <div class="box-actions">
+              <button class="play-btn" type="button" data-audio="drop4" aria-label="Play preview">
+                <i class="fas fa-play icon-play"></i>
+                <div class="audio-bars"><span></span><span></span><span></span><span></span></div>
+              </button>
+              <a href="https://wa.me/254745736283?text=Hi%20Drops-Kenya,%20I%20want%20to%20buy%20Titan%20DJ%20Drop%20for%20KES%20350" target="_blank" rel="noopener noreferrer" class="buy-btn" aria-label="Buy on WhatsApp">
+                <i class="fab fa-whatsapp"></i> Buy
+              </a>
             </div>
             <audio id="drop4" preload="none" src="assets/audio/Titan-Sound.mp3" type="audio/mpeg"></audio>
-            <div class="card-actions">
-              <button class="play-btn" type="button" data-audio="drop4" aria-label="Play Titan DJ drop">
-                <i class="fas fa-play" aria-hidden="true"></i> Play
-              </button>
-              <a href="https://wa.me/254745736283?text=Hi%20Drops-Kenya,%20I%20want%20to%20buy%20Titan%20DJ%20Drop%20for%20KES%20350" target="_blank" rel="noopener noreferrer" class="buy-btn" aria-label="Buy Titan DJ drop on WhatsApp">
-                <i class="fab fa-whatsapp" aria-hidden="true"></i> Buy
-              </a>
-            </div>
-            <p>Let Your Name Roar</p>
           </article>
-          
-                  
-          <article class="audio-card new" itemscope itemtype="https://schema.org/Product">
-            <img src="assets/images/profiles/profile.png" alt="Velvet DJ drop profile image" class="profile-img" loading="lazy" width="90" height="90" itemprop="image">
-            <div class="audio-info">
-              <h3 itemprop="name">Velvet</h3>
-              <p>Female • Soft • Seductive</p>
-              <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+
+          <!-- Box 5 -->
+          <article class="audio-box new animate-on-scroll" itemscope itemtype="https://schema.org/Product">
+            <img src="assets/images/profiles/Velvet profile.jpg" alt="Velvet" class="box-img" loading="lazy" itemprop="image">
+            <div class="box-content">
+              <h3 class="box-title" itemprop="name">Velvet</h3>
+              <p class="box-meta">Female • Soft • Seductive</p>
+              <span class="box-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <meta itemprop="priceCurrency" content="KES">
-                <span itemprop="price">350</span>/Drop
+                KES <span itemprop="price">350</span>
               </span>
             </div>
-            <audio id="drop6" preload="none" src="assets/audio/Velvet-Sound.mp3" type="audio/mpeg"></audio>
-            <div class="card-actions">
-              <button class="play-btn" type="button" data-audio="drop6" aria-label="Play Velvet DJ drop">
-                <i class="fas fa-play" aria-hidden="true"></i> Play
+            <div class="box-actions">
+              <button class="play-btn" type="button" data-audio="drop6" aria-label="Play preview">
+                <i class="fas fa-play icon-play"></i>
+                <div class="audio-bars"><span></span><span></span><span></span><span></span></div>
               </button>
-              <a href="https://wa.me/254745736283?text=Hi%20Drops-Kenya,%20I%20want%20to%20buy%20Velvet%20DJ%20Drop%20for%20KES%20350" target="_blank" rel="noopener noreferrer" class="buy-btn" aria-label="Buy Velvet DJ drop on WhatsApp">
-                <i class="fab fa-whatsapp" aria-hidden="true"></i> Buy
+              <a href="https://wa.me/254745736283?text=Hi%20Drops-Kenya,%20I%20want%20to%20buy%20Velvet%20DJ%20Drop%20for%20KES%20350" target="_blank" rel="noopener noreferrer" class="buy-btn" aria-label="Buy on WhatsApp">
+                <i class="fab fa-whatsapp"></i> Buy
               </a>
             </div>
-            <p>Your Name. Pure Queen.</p>
-  </article>
-
+            <audio id="drop6" preload="none" src="assets/audio/Velvet-Sound.mp3" type="audio/mpeg"></audio>
+          </article>
         </div>
       </section>
 
       <!-- ===== ADVERTISE ===== -->
       <section id="advertise" class="spotlight" aria-labelledby="advertise-title">
-        <h2 id="advertise-title">Artists Spotlight</h2>
-        <p class="intro">
-          Reach thousands of DJs, musicians, and music enthusiasts.
-          Get featured here for only <strong>KES 1,000 per week</strong> and grow your brand.
-        </p>
+        <div class="section-header animate-on-scroll">
+          <h2 id="advertise-title">Artists Spotlight</h2>
+          <p class="intro">Reach thousands of DJs, musicians, and music enthusiasts. Get featured here for only <strong>KES 1,000 per week</strong>.</p>
+        </div>
 
         <div class="spotlight-grid">
-          <article class="empty-card">
-            <i class="fas fa-bullhorn" aria-hidden="true"></i>
+          <article class="empty-card animate-on-scroll">
+            <div class="spotlight-icon"><i class="fas fa-bullhorn" aria-hidden="true"></i></div>
             <h3>Your Profile Here</h3>
-            <p>Showcase your DJ brand or artist profile with direct links to your socials. Don’t miss out — apply today and be seen.</p>
+            <p>Showcase your DJ brand or artist profile with direct links to your socials. Don’t miss out — apply today.</p>
             <div class="social-preview" aria-label="Social media preview">
               <i class="fab fa-youtube" aria-hidden="true"></i>
               <i class="fab fa-instagram" aria-hidden="true"></i>
@@ -253,7 +287,7 @@
             </a>
           </article>
 
-          <article class="artist-card">
+          <article class="artist-card animate-on-scroll">
             <img src="assets/images/temporal-profile/profile.jpg" alt="Artist profile preview" class="artist-img" loading="lazy" width="80" height="80">
             <h3>Your Dj Name</h3>
             <p>Your Social Media Icons</p>
@@ -269,34 +303,36 @@
 
       <!-- ===== BLOG ===== -->
       <section id="blog" class="blog" aria-labelledby="blog-title">
-        <h2 id="blog-title">Educative Blogs</h2>
-        <p class="intro">Essential guides and insights for DJs, artists, and the public.</p>
+        <div class="section-header animate-on-scroll">
+          <h2 id="blog-title">Educative Blogs</h2>
+          <p class="intro">Essential guides and insights for DJs, artists, and the public.</p>
+        </div>
 
         <div class="blog-grid">
-          <article class="blog-card">
+          <article class="blog-card animate-on-scroll">
             <img src="assets/images/blog-img.jpg" alt="Tips for DJ drops" class="blog-img" loading="lazy">
             <div class="blog-content">
               <h3>The Importance of DJ Drops</h3>
               <p>Learn the essentials of crafting drops that energize crowds and build your brand.</p>
-              <a href="blog/blog1.html" class="read-more">Read More</a>
+              <a href="blog/blog1.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
             </div>
           </article>
 
-          <article class="blog-card">
+          <article class="blog-card animate-on-scroll">
             <img src="assets/images/Blog-images/law-blogs.jpeg" alt="Music rights in Kenya" class="blog-img" loading="lazy">
             <div class="blog-content">
               <h3>Understanding Music Rights in Kenya</h3>
               <p>A simple guide to copyright, royalties, and protecting your creative work.</p>
-              <a href="blog/blog2.html" class="read-more">Read More</a>
+              <a href="blog/blog2.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
             </div>
           </article>
 
-          <article class="blog-card">
+          <article class="blog-card animate-on-scroll">
             <img src="assets/images/Blog-images/market-blog.jpeg" alt="DJ marketing tips" class="blog-img" loading="lazy">
             <div class="blog-content">
               <h3>Marketing Yourself as a DJ</h3>
               <p>Discover strategies to grow your audience using TikTok, Instagram, and live events.</p>
-              <a href="blog/blog3.html" class="read-more">Read More</a>
+              <a href="blog/blog3.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
             </div>
           </article>
         </div>
@@ -304,24 +340,35 @@
 
       <!-- ===== TESTIMONIALS ===== -->
       <section id="testimonials" class="testimonials" aria-labelledby="testimonials-title">
-        <h2 id="testimonials-title">What DJs Say</h2>
+        <div class="section-header animate-on-scroll">
+          <h2 id="testimonials-title">What DJs Say</h2>
+        </div>
         <div class="testimonials-grid">
-          <article class="testimonial-card">
-            <img src="assets/images/testimonials-profiles/dj-wisdom.jpg" alt="DJ Wisdom profile photo" class="testimonial-img" loading="lazy" width="65" height="65">
+          <article class="testimonial-card animate-on-scroll">
+            <img src="assets/images/testimonials-profiles/dj-wisdom.jpg" alt="DJ Wisdom" class="testimonial-img" loading="lazy" width="65" height="65">
+            <div class="rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
             <p class="quote">“Drops-Kenya gave my sets a whole new energy. Crowd goes wild!”</p>
             <h3 class="name">DJ Wisdom</h3>
             <span class="role">Event DJ • Nairobi</span>
           </article>
 
-          <article class="testimonial-card">
-            <img src="assets/images/testimonials-profiles/dj-bella.jpg" alt="DJ Bella profile photo" class="testimonial-img" loading="lazy" width="65" height="65">
+          <article class="testimonial-card animate-on-scroll">
+            <img src="assets/images/testimonials-profiles/dj-bella.jpg" alt="DJ Bella" class="testimonial-img" loading="lazy" width="65" height="65">
+            <div class="rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
             <p class="quote">“Professional, crisp, and powerful drops. Perfect for radio branding.”</p>
             <h3 class="name">DJ Bella</h3>
             <span class="role">Club DJ • Bungoma</span>
           </article>
 
-          <article class="testimonial-card new">
-            <img src="assets/images/testimonials-profiles/dj-two.jpg" alt="DJ Two profile photo" class="testimonial-img" loading="lazy" width="65" height="65">
+          <article class="testimonial-card new animate-on-scroll">
+            <img src="assets/images/testimonials-profiles/dj-two.jpg" alt="DJ Two" class="testimonial-img" loading="lazy" width="65" height="65">
+            <div class="rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
             <p class="quote">“The new drops are fire! My event intros sound premium.”</p>
             <h3 class="name">DJ Two</h3>
             <span class="role">Event DJ • Mombasa</span>
@@ -331,34 +378,48 @@
 
       <!-- ===== CONTACT ===== -->
       <section id="contact" class="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Contact Us</h2>
-        <p class="intro">Ready to get your custom DJ drop or advertise with us? Reach out today and let’s make it happen.</p>
+        <div class="section-header animate-on-scroll">
+          <h2 id="contact-title">Contact Us</h2>
+          <p class="intro">Ready to get your custom DJ drop or advertise with us? Reach out today.</p>
+        </div>
 
         <div class="contact-grid">
-          <form class="contact-form" id="contactForm" novalidate>
-            <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name" aria-describedby="nameError">
-            <small class="error" id="nameError"></small>
+          <form class="contact-form animate-on-scroll" id="contactForm" novalidate>
+            <div class="input-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name" aria-describedby="nameError">
+              <small class="error" id="nameError"></small>
+            </div>
 
-            <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="email" aria-describedby="emailError">
-            <small class="error" id="emailError"></small>
+            <div class="input-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="email" aria-describedby="emailError">
+              <small class="error" id="emailError"></small>
+            </div>
 
-            <textarea id="message" name="message" placeholder="Your Message Here..." rows="5" maxlength="100" aria-describedby="charCount messageError"></textarea>
-            <small id="charCount">100 characters remaining</small>
-            <small class="error" id="messageError"></small>
+            <div class="input-group">
+              <textarea id="message" name="message" placeholder="Your Message Here..." rows="4" maxlength="100" aria-describedby="charCount messageError"></textarea>
+              <div class="textarea-footer">
+                <small id="charCount">100 characters remaining</small>
+                <small class="error" id="messageError"></small>
+              </div>
+            </div>
 
-            <button type="submit" class="submit-btn">Send Message</button>
+            <button type="submit" class="submit-btn">Send via WhatsApp <i class="fab fa-whatsapp"></i></button>
           </form>
 
-          <div class="contact-info">
+          <div class="contact-info animate-on-scroll">
             <h3>Get in Touch</h3>
-            <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+254745736283">+254 745 736 283</a></p>
-            <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:dropskenya001@gmail.com">dropskenya001@gmail.com</a></p>
-            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Nairobi, Kenya</p>
-            <!-- <div class="social-links">
-              <a href="https://tiktok.com/@dropskenya" target="_blank" rel="noopener noreferrer" class="tiktok-btn">
-                <i class="fab fa-tiktok" aria-hidden="true"></i> Follow us on TikTok
-              </a>
-            </div> -->
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+254745736283">+254 745 736 283</a>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:dropskenya001@gmail.com">dropskenya001@gmail.com</a>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Nairobi, Kenya</span>
+            </div>
           </div>
         </div>
       </section>
@@ -380,10 +441,10 @@
         </nav>
 
         <div class="footer-social" aria-label="Social links">
-          <a href="https://tiktok.com/@dropskenya" target="_blank" rel="noopener noreferrer" class="tiktok-footer">
+          <a href="https://tiktok.com/@dropskenya" target="_blank" rel="noopener noreferrer" class="social-pill">
             <i class="fab fa-tiktok" aria-hidden="true"></i> TikTok
           </a>
-          <a href="https://www.facebook.com/profile.php?id=61588281982285" target="_blank" rel="noopener noreferrer" class="tiktok-footer">
+          <a href="https://www.facebook.com/profile.php?id=61588281982285" target="_blank" rel="noopener noreferrer" class="social-pill">
             <i class="fab fa-facebook" aria-hidden="true"></i> Facebook
           </a>
         </div>
@@ -392,5 +453,8 @@
       </div>
     </footer>
   </div>
+
+  <!-- Global Toast Container for Web App Notifications -->
+  <div id="toast-container" class="toast-container"></div>
 </body>
 </html>
