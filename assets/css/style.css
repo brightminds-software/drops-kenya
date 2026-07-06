@@ -648,3 +648,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     transform: translateX(-6px);
   }
 }
+
+
+.sooon{
+  background-color: #25D366;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
