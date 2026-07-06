@@ -654,5 +654,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background-color: #25D366;
   color: white;
   padding: 5px 7px;
+   font-size: 12px;
   border-radius: 10px;
 }
