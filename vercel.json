@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "drops-kenya.vercel.app"
+        }
+      ],
+      "destination": "https://www.dropskenya.com/$1",
+      "permanent": true
+    }
+  ]
+}

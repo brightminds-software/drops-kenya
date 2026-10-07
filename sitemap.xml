@@ -3,22 +3,34 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://drops-kenya.vercel.app/</loc>
-    <lastmod>2026-02-12</lastmod>
+    <loc>https://www.dropskenya.com/</loc>
+    <lastmod>2026-10-07</lastmod>
     <priority>1.0</priority>
   </url>
 
-  <!-- Blog page -->
+  <!-- Blog Posts -->
   <url>
-    <loc>https://drops-kenya.vercel.app/blog</loc>
-    <lastmod>2026-02-12</lastmod>
+    <loc>https://www.dropskenya.com/blog/blog1.html</loc>
+    <lastmod>2026-10-07</lastmod>
     <priority>0.8</priority>
   </url>
 
-  <!-- Contact page -->
   <url>
-    <loc>https://drops-kenya.vercel.app/contact</loc>
-    <lastmod>2026-02-12</lastmod>
+    <loc>https://www.dropskenya.com/blog/blog2.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dropskenya.com/blog/blog3.html</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Terms Page (if applicable) -->
+  <url>
+    <loc>https://www.dropskenya.com/terms.html</loc>
+    <lastmod>2026-10-07</lastmod>
     <priority>0.5</priority>
   </url>
 
